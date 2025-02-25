@@ -1,15 +1,37 @@
+:root {
+   --background-color: #fff;
+   --color: #000;
+   --button-color: #f0f0f0;
+   --button-hover-color: #e0e0e0;
+   --equal-button: #4caf50;
+   --equal-hover: #45a049;
+   --clear-button: #000000df;
+   --clear-color: #fff;
+}
+
+.dark-theme {
+   --background-color: #000004;
+   --color: #fff;
+   --button-color: #000004;
+   --button-hover-color: #000000;
+   --equal-button: #ff9933;
+   --equal-hover: #cc6600;
+   --clear-button: ##fffff0;
+   --clear-color: #000;
+}
+
 body {
    display: flex;
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background-color: #ffffff;
+   background-color: --background-color;
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
 }
 
 .calculator {
-   background-color: #fff;
+   background-color: --background-color;
    border-radius: 10px;
    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
    width: 300px;
@@ -17,8 +39,8 @@ body {
 }
 
 #display {
-   background-color: #f0f0f0;
-   color: #000000;
+   background-color: --button-color;
+   color: --color;
    font-size: 2em;
    text-align: right;
    padding: 10px;
@@ -53,7 +75,7 @@ body {
 }
 
 .btn {
-   background-color: #f0f0f0;
+   background-color: --button-color;
    border: none;
    padding: 20px;
    font-size: 1.2em;
@@ -67,25 +89,25 @@ body {
 }
 
 .btn:hover .btn:pressed{
-   background-color: #e0e0e0;
+   background-color: --button-hover-color;
 }
 
 .clear {
-   background-color: #000000df;
-   color: #ffffff;
+   background-color: --clear-button;
+   color: --clear-color;
    transition: background-color 0.2s ease-in-out;
 }
 
-.clear:hover {
+.clear:hover .clear:pressed{
    background-color: #000000;
 }
 
 .equal {
    grid-column: span 2;
-   background-color: #4caf50;
+   background-color: --equal-button;
    color: #fff;
 }
 
-.equal:hover {
-   background-color: #45a049;
+.equal:hover  .equal:pressed{
+   background-color: --equal-hover;
 }
