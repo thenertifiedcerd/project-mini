@@ -1,6 +1,11 @@
 const display = document.getElementById('display');
 let displayValue = '';
 
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+});
+
 document.addEventListener('keydown', function(event) {
   const key = event.key; // Get the pressed key
 
