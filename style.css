@@ -32,7 +32,8 @@ body {
 
 .theme-toggle {
    border: none;
-   padding: none;
+   shadow: none;
+   padding-right: 10px;
    margin: none;
    position: fixed;
    background-color: var(--equal-button);
