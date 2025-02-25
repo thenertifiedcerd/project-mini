@@ -25,13 +25,26 @@ body {
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background-color: --background-color;
+   background-color: var(--background-color);
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
 }
 
+.theme-toggle {
+   border: none;
+   padding: none;
+   margin: none;
+   position: fixed;
+   background-color: var(--equal-button);
+   transition: background-color 0.15s ease-in-out;
+}
+
+.theme-toggle:hover .theme-toggle:pressed {
+   background-color: var(--equal-hover);
+}
+
 .calculator {
-   background-color: --background-color;
+   background-color: var(--background-color);
    border-radius: 10px;
    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
    width: 300px;
@@ -39,7 +52,7 @@ body {
 }
 
 #display {
-   background-color: --button-color;
+   background-color: var(--button-color);
    color: --color;
    font-size: 2em;
    text-align: right;
@@ -75,7 +88,7 @@ body {
 }
 
 .btn {
-   background-color: --button-color;
+   background-color: var(--button-color);
    border: none;
    padding: 20px;
    font-size: 1.2em;
@@ -89,12 +102,12 @@ body {
 }
 
 .btn:hover .btn:pressed{
-   background-color: --button-hover-color;
+   background-color: var(--button-hover-color);
 }
 
 .clear {
-   background-color: --clear-button;
-   color: --clear-color;
+   background-color: var(--clear-button);
+   color: var(--clear-color);
    transition: background-color 0.2s ease-in-out;
 }
 
@@ -104,10 +117,10 @@ body {
 
 .equal {
    grid-column: span 2;
-   background-color: --equal-button;
+   background-color: var(--equal-button);
    color: #fff;
 }
 
 .equal:hover  .equal:pressed{
-   background-color: --equal-hover;
+   background-color: var(--equal-hover);
 }
