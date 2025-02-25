@@ -90,6 +90,7 @@ body {
 
 .btn {
    background-color: var(--button-color);
+   color: var(--color);
    border: none;
    padding: 20px;
    font-size: 1.2em;
