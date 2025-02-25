@@ -10,13 +10,13 @@
 }
 
 .dark-theme {
-   --background-color: #000004;
+   --background-color: #111111;
    --color: #fff;
-   --button-color: #000004;
+   --button-color: #00001f;
    --button-hover-color: #000000;
    --equal-button: #ff9933;
    --equal-hover: #cc6600;
-   --clear-button: ##fffff0;
+   --clear-button: #fffff0;
    --clear-color: #000;
 }
 
