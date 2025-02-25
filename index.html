@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" title="Calculate, Calculator, solve, Femi-Akinwande" />
+    <title>Calculator App by Benjamin Femi-Akinwande</title>
+    <link rel='stylesheet' href='style.css' />
+</head>
+<body>
+    <div id="calculator">
+        <div id="calculator-header"><h2>Calculator App</h2></div>
+      <div id="display" class='display'>0</div>
+      <div id="buttons">
+         <div id="numbers">
+            <div id="operator-top">
+               <button class="btn clear" onClick="clearDisplay()">C</button>
+               <button class="btn" onClick="deleteNumber()">DEL</button>
+               <button class="btn" onClick="calcPercent()">%</button>
+               <button class="btn" id="pi" onClick="calcPi()">π</button>
+               <button class="btn"  onClick="appendNumber('**')">^</button>
+            </div>
+            <div class="number-row-1">
+            <button class="btn" onClick="appendNumber('7')">7</button>
+            <button class="btn" onClick="appendNumber('8')">8</button>
+            <button class="btn" onClick="appendNumber('9')">9</button>
+            <button class="btn" onClick="squareRoot()">√</button>
+            <button class="btn" onClick="cubeRoot()">∛</button>
+            </div>
+            </div>
+            <div class="number-row-2">
+            <button class="btn" onClick="appendNumber('4')">4</button>
+            <button class="btn" onClick="appendNumber('5')">5</button>
+            <button class="btn" onClick="appendNumber('6')">6</button>
+            <button class="btn" onClick="calcSin()">sin</button>
+            <button class="btn" onClick="calcIn()">In</button>
+            </div>
+            <div class="number-row-3">
+            <button class="btn" onClick="appendNumber('1')">1</button>
+            <button class="btn" onClick="appendNumber('2')">2</button>
+            <button class="btn" onClick="appendNumber('3')">3</button>
+            <button class="btn" onClick="calcCos()">cos</button>
+            <button class="btn" onClick="calcLog()">log</button>
+            </div>
+            <div class="number-row-4">
+            <button class="btn" onClick="appendNumber('00')">00</button>
+            <button class="btn" onClick="appendNumber('0')">0</button>
+            <button class="btn" onClick="appendNumber('.')">.</button>
+            <button class="btn" onClick="calcTan()">tan</button>
+            <button class="btn" onClick="calcFact()">!</button>
+         </div>
+         </div>
+        <div id="operators">
+         <button class="btn" onClick="appendNumber('/')">÷</button>
+         <button class="btn" onClick="appendNumber('*')">×</button>
+         <button class="btn" onClick="appendNumber('-')">-</button>
+         <button class="btn" onClick="appendNumber('+')">+</button>
+         <button class="btn equal" onClick="compute()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
