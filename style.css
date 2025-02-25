@@ -25,6 +25,7 @@ body {
    justify-content: center;
    align-items: center;
    height: 100vh;
+   color: var(--color);
    background-color: var(--background-color);
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
