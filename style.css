@@ -110,7 +110,7 @@ body {
 
 .clear {
    background-color: var(--clear-button);
-   color: var(--color);
+   color: var(--clear-color);
    transition: background-color 0.2s ease-in-out;
 }
 
