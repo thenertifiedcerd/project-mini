@@ -24,6 +24,10 @@ document.addEventListener('keydown', function(event) {
 }
 });
 
+function radToDeg(radians) {
+ return radians * (180 / Math.Pi);
+}
+
 
 function calcPi() {
 if (displayValue === '.') {
