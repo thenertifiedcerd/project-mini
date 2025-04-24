@@ -40,21 +40,21 @@ if (displayValue === '.') {
 
 function calcSin() {
    if(displayValue && calcSin) {
-      displayValue = Math.sin(displayValue);
+      displayValue = radToDeg(Math.sin(displayValue));
    }
    updateDisplay();
 }
 
 function calcCos() {
    if(displayValue && calcCos) {
-      displayValue = Math.cos(displayValue);
+      displayValue = radToDeg(Math.cos(displayValue));
    }
    updateDisplay();
 }
 
 function calcTan() {
    if(displayValue && calcTan) {
-      displayValue = Math.tan(displayValue);
+      displayValue = radToDeg(Math.tan(displayValue));
    }
    updateDisplay();
 }
